@@ -1,4 +1,4 @@
-import 'package:e_book/config/colors_config.dart';
+import 'package:e_book/config/colors.dart';
 import 'package:flutter/material.dart';
 
 var lightTheme = ThemeData(
