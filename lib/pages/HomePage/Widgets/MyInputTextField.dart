@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -12,12 +14,12 @@ class MyInputTextField extends StatelessWidget {
           color: Theme.of(context).colorScheme.background),
       child: Row(
         children: [
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           SvgPicture.asset("assets/icons/search.svg"),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Expanded(
             child: TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: "Search here..",
                 border: OutlineInputBorder(borderSide: BorderSide.none),
               ),

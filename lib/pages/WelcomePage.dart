@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, prefer_const_constructors
 
 import 'package:e_book/components/PrimaryButton.dart';
 import 'package:e_book/pages/HomePage/HomePage.dart';
