@@ -3,10 +3,12 @@
 import 'package:e_book/components/BookCard.dart';
 import 'package:e_book/components/BookTile.dart';
 import 'package:e_book/models/BookData.dart';
+import 'package:e_book/pages/BookDetails/BookDetails.dart';
 import 'package:e_book/pages/HomePage/Widgets/CategoryWidget.dart';
 import 'package:e_book/pages/HomePage/Widgets/HomeAppBar.dart';
 import 'package:e_book/pages/HomePage/Widgets/MyInputTextField.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -129,7 +131,11 @@ class HomePage extends StatelessWidget {
                           .map((e) => BookCard(
                                 bookUrl: e.bookUrl!,
                                 title: e.title!,
-                                ontap: () {},
+                                ontap: () {
+                                  Get.to(
+                                    BookDetails(),
+                                  );
+                                },
                               ))
                           .toList(),
                     ),
