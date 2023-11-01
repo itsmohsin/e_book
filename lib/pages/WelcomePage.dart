@@ -1,5 +1,9 @@
+// ignore_for_file: file_names
+
 import 'package:e_book/components/PrimaryButton.dart';
+import 'package:e_book/pages/HomePage/HomePage.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -85,7 +89,9 @@ class WelcomePage extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: PrimaryButton(
               btnName: 'Continue',
-              onTap: () {},
+              onTap: () {
+                Get.offAll(HomePage());
+              },
             ),
           ),
         ],
